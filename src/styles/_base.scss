@@ -1,11 +1,21 @@
 
 // COLOR VARIABLES
-$color-primary-text: #282c3f;
-$primary-color: #72c172;
+$color-primary-text: #666666;
+$primary-color: #1875f0;
+$secondary-color: #f5f5f5;
 $white: #fff;
-$light-grey: #888888;
-$light-grey-2: #535665;
-$light-grey-3: #7e808c;
+$off-white: #fafafa;
+$light-grey: #f7f7f7;
+$light-grey-2: #bcbcbc;
+
+//header
+$header-color-text: #b3b3b3;
+
+//features
+$nav-color: #1875f0;
+
+//card
+$wishlist: #ff4343;;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
@@ -30,10 +40,21 @@ html {
 body {
     font-family: $font-primary;
     color: $color-primary-text;
+    background-color: $off-white;
     font-weight: 300;
     line-height: 1.6;
     letter-spacing: 0;
 }
-h1 {
-     color:yellow;
+.main {
+    padding: 2rem 16rem;
+}
+@include respond(phone) {
+    .main {
+        padding: 1rem;
+    }
+}
+@include respond(tab) {
+    .main {
+        padding: 1rem;
+    }
 }

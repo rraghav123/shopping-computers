@@ -1,0 +1,101 @@
+.carousel {
+    transform-style: preserve-3d;
+    min-height: 30vw;
+    &-wrapper {
+        overflow: hidden;
+    }
+    &__item {
+        opacity: 0;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        transition: transform .5s, opacity .5s, z-index .5s;
+        &__header {
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            text-align: center;
+            font-size: 3vw;
+        }
+    }
+    &__image {
+        height: 30vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__controls {
+        position: absolute;
+        z-index: 1000;
+        display: flex;
+        width: 100%;
+        top: 50%;
+        height: 50%;
+        align-items: center;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        &--left,&--right {
+            height: 4vw;
+            width: 4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            font-size: 2vw;
+            color: $white;
+            cursor: pointer;
+        }
+        &--left {
+            margin-left: 1rem;
+        }
+        &--right {
+            margin-right: 1rem;
+        }
+        &--text {
+            align-self: flex-end;
+            font-size: 1vw;
+        }
+        &--disabled {
+            visibility: hidden;
+        }
+    }
+    &--active,&--initial {
+        opacity: 1;
+        z-index: 900;
+    }
+    &--prev {
+        z-index: 800;
+        transform: translateX(-100%)
+    }
+    &--next {
+        z-index: 800;
+        transform: translateX(100%)
+    }
+    &__indicators {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+        &--indicator {
+            width: 5vw;
+            height: 2px;
+            background-color: white;
+            cursor: default;
+            opacity: 0.5;
+            &--active {
+                opacity: 1;
+            }
+        }
+    }
+}

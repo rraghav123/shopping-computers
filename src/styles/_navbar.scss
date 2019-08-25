@@ -1,0 +1,8 @@
+.navbar__item {
+    display: inline-block;
+    padding: 1.8rem 0;
+    &--active {
+        color: $nav-color;
+        border-bottom: 1px solid $nav-color;
+    }
+}

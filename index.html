@@ -4,11 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>RentoMojo</title>
     <link rel="stylesheet" href="dist/bundle.css">
-    <script src="./dist/bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <!-- Header start -->
+    <header class="header">
+        <figure class="header__image">
+            <img src="https://i.ibb.co/nrG2zSx/image001.png" alt="image001" border="0">
+        </figure>
+        <div class="header__search-container">
+            <input placeholder="Search goods" class="header__search-input"></input>
+            <div class="header__search-dropdown">
+                <span class="header__active-category"></span>
+                <i class="fas fa-caret-down"></i>
+                <div class="header__categories">
+                    <!-- DropDown Items-->
+                </div>
+            </div>
+            <div class="header__search-button">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="header-icons-container">
+            <div class="header-icons">
+                <span class="header-icons--count">
+                    <span id="cart-count" class="header-icons--count-value">5</span>
+                    <i class="fas fa-shopping-cart"></i>
+                </span>
+                <span>Cart</span>
+            </div>
+            <div class="header-icons">
+                <span class="header-icons--count">
+                    <span id="wishlist-count" class="header-icons--count-value">5</span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>Wish List</span>
+            </div>
+            <div class="header-icons">
+                <i class="far fa-user"></i>
+                <span>Sign in</span>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <main class="main">
+    <!-- CAROUSEL start -->
+        <section class="carousel-wrapper">
+            <div class="carousel">
+                <div class="carousel__item">
+                        <figure style="background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/titan/titan-rtx/nvidia-titan-rtx-hero-1024x440-t@2x.jpg)" class="carousel__image"></figure>
+                        <h1 class="carousel__item__header" style="color: #b2a384">NVIDIA TITAN RTX</h1>
+                </div>
+                <div class="carousel__item">
+                        <figure style="background-image: url(https://www.apple.com/v/mac/home/ah/images/overview/hero/macbook_pro__2sd1pdltjgye_medium_2x.jpg)" class="carousel__image"></figure>
+                        <h1 class="carousel__item__header" style="color: #fff">Lightness strikes again.</h1>
+                </div>
+                <div class="carousel__item">
+                        <figure style="background-image: url(https://storage-asset.msi.com/global/picture/image/feature/desktop/TridentX/TridentX-Plus-KV.jpg)" class="carousel__image"></figure>
+                        <h1 class="carousel__item__header"></h1>
+                </div>
+                <div class="carousel__item">
+                        <figure style="background-image: url(https://i.ibb.co/4ffMHVS/image.png)" class="carousel__image"></figure>
+                        <h1 class="carousel__item__header">The Universe Through A Child's eye</h1>
+                </div>
+                <div class="carousel__item">
+                        <figure style="background-image: url(https://d4kkpd69xt9l7.cloudfront.net/sys-master/images/h6e/h2d/9110600450078/razer-blade-stealth-13-usp1-desktop.jpg)" class="carousel__image"></figure>
+                        <h1 class="carousel__item__header">More Games. More Power. More Places.</h1>
+                </div>
+                <div class="carousel__controls">
+                    <span class="carousel__controls--left">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    <p class="carousel__controls--text">Start sales</p>
+                    <span class="carousel__controls--right">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+                <div class="carousel__indicators">
+                    <span class="carousel__indicators--indicator"></span>
+                    <span class="carousel__indicators--indicator"></span>
+                </div>
+            </div>
+        </section>
+    <!-- CAROUSEL end -->
+        <section>
+            <div class="features__container">
+                <div class="sidebar__conatiner">
+                    <!-- SideBar Content -->
+                </div>
+                <div class="features__quote">
+                    <h1>Look Up In The Sky</h1>
+                    <p>Astronomy or Astrology</p>
+                </div>
+                <div class="features__items">
+                    <nav class="items__navbar">
+                        <!-- NAVBAR-ITEMS -->
+                    </nav>
+                    <section class="items__container">
+                        <!-- ITEMS -->
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>
